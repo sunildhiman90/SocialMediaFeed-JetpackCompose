@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/ic_comment_outline.xml -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#000000"
+        android:strokeColor="#000000"
+        android:strokeWidth="1"
+        android:pathData="M21.72 3.84C19.7 1.71 16.94.5 14 .5c-4.65 0-8.5 3.44-8.5 7.65 0 3.12 1.66 5.68 4.13 6.93L6 20v1c0 1.1.9 2 2 2h1l3.87-3.87c2.23.96 4.75.96 6.99 0 3.07-1.23 5.14-3.92 5.14-6.93 0-1.4-.35-2.72-.99-3.86-.17-.28-.54-.36-.81-.19-.28.17-.36.54-.19.81.52.89.82 1.91.82 3.23 0 2.48-1.6 4.6-3.83 5.49-2.02.83-4.3.74-6.18-.24-.24-.12-.49-.22-.75-.32-.26-.1-.52-.2-.78-.32-.1-.06-.22-.06-.32-.01-.11.05-.2.14-.25.25-.06.1-.06.22-.01.32.18.44.43.87.75 1.26 1.15 1.39 2.84 2.4 4.7 2.63h.25l.1.03h1..."/>
+</vector>
