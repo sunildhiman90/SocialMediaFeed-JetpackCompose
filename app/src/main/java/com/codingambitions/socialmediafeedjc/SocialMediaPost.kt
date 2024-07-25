@@ -16,6 +16,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.constraintlayout.compose.ConstraintLayout
@@ -144,7 +145,7 @@ fun SocialMediaPost() {
         )
 
         Text(
-            text = "1,123 likes",
+            text = stringResource(id = R.string.likes, "1,123"),
             style = MaterialTheme.typography.titleSmall,
             color = Color.Black,
             modifier = Modifier.constrainAs(likes) {
@@ -163,7 +164,7 @@ fun SocialMediaPost() {
         )
 
         Text(
-            text = "View all 13 comments",
+            text = stringResource(id = R.string.comments, 13),
             style = MaterialTheme.typography.bodySmall,
             color = Color.Gray,
             modifier = Modifier.constrainAs(comments) {

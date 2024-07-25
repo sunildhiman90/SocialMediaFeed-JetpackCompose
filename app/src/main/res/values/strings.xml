@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">SocialMediaFeed-JetpackCompose</string>
+    <string name="app_title">Social Media App</string>
+    <string name="likes">%s likes</string>
+    <string name="comments">View all %d comments</string>
 </resources>
