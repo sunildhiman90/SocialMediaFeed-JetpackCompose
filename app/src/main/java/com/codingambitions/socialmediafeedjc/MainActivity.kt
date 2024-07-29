@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.annotation.DrawableRes
+import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -43,7 +44,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.codingambitions.socialmediafeedjc.ui.theme.SocialMediaFeedJetpackComposeTheme
 
-class MainActivity : ComponentActivity() {
+class MainActivity : AppCompatActivity() {
 
     val languageChangeHelper by lazy {
         LanguageChangeHelper()
@@ -156,8 +157,8 @@ fun LanguagesDropdown(
                     LanguageListItem(selectedItem = item)
                 }, onClick = {
                     selectedItem = item
-                    onCurrentLanguageChange(selectedItem.code)
                     expanded = !expanded
+                    onCurrentLanguageChange(selectedItem.code)
                 })
             }
 
