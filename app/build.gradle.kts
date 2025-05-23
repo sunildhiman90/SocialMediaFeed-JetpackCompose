@@ -1,16 +1,17 @@
 plugins {
     alias(libs.plugins.android.application)
+    alias(libs.plugins.compose.compiler)
     alias(libs.plugins.jetbrains.kotlin.android)
 }
 
 android {
     namespace = "com.codingambitions.socialmediafeedjc"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.codingambitions.socialmediafeedjc"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -33,19 +34,20 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
-    kotlinOptions {
-        jvmTarget = "1.8"
-    }
     buildFeatures {
         compose = true
     }
-    composeOptions {
+    //This is not required for kotlin 2.0 or later, becoz we add compose compiler plugin now
+    /*composeOptions {
         kotlinCompilerExtensionVersion = "1.5.1"
-    }
+    }*/
     packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
     }
 }
 
@@ -68,5 +70,5 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 
     // For constraint layout
-    implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1")
+    implementation("androidx.constraintlayout:constraintlayout-compose:1.1.1")
 }
