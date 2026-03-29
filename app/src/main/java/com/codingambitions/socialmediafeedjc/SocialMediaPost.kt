@@ -114,7 +114,7 @@ fun SocialMediaPost() {
             painter = painterResource(id = R.drawable.comment_icon),
             contentDescription = null,
             modifier = Modifier
-                .size(24.dp)
+                .size(22.dp)
                 .constrainAs(comment) {
                     top.linkTo(image.bottom, margin = 16.dp)
                     start.linkTo(like.end, margin = 16.dp)
@@ -136,7 +136,7 @@ fun SocialMediaPost() {
             painter = painterResource(id = R.drawable.bookmark2),
             contentDescription = null,
             modifier = Modifier
-                .size(24.dp)
+                .size(28.dp)
                 .constrainAs(bookmark) {
                     top.linkTo(image.bottom, margin = 16.dp)
                     end.linkTo(parent.end, margin = 16.dp)
